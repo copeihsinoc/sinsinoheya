@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-
+/*
 *{
     outline: 1px solid red;
 }
-
+*/
 body{
     background-color: #f9e7f1;
     margin: 0;
@@ -54,6 +54,23 @@ nav {
     border: none;
     color: #ff158a;
     cursor: pointer;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    padding: 10px;
+    list-style: none;
+    z-index: 1000;
+}
+
+.dropdown1, .dropdown2 {
+    position: relative;
+}
+
+/* add .show submenu */
+.dropdown1.show .submenu, .dropdown2.show .submenu {
+    display: block;
 }
 
 /*section-logo*/
@@ -139,6 +156,7 @@ nav {
     position: relative;
     text-align: center;
     margin: 70px 0 ;
+    overflow-x: hidden;
 }
 
 .slideContainer {

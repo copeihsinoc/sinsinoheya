@@ -9,25 +9,38 @@ function enterSite(){
 }
 
 /*menu*/
-let menuToggle = document.getElementById("menuToggle");
-let menu = document.getElementById("menu");
+const menuToggle = document.getElementById("menuToggle");
+const menu = document.getElementById("menu");
 
-menuToggle.addEventListener("click", ()=>{
-    menu.classList.toggle("show");      //in html no show when click => show
+menuToggle.addEventListener("click", () => {
+  menu.classList.toggle("show");
 });
 
+// 控制 submenu 展開/收起
 document.querySelectorAll('.submenuToggle').forEach(toggleBtn => {
-  toggleBtn.addEventListener('click', () => {
-    let parentDropdown = toggleBtn.closest('.dropdown1', '.dropdown2');
-    if(parentDropdown){
-      parentDropdown.classList.toggle('show');
-    }
+  toggleBtn.addEventListener('click', (e) => {
+    e.stopPropagation(); // 阻止事件冒泡，避免其他點擊被觸發
+    const parentDropdown = toggleBtn.closest('.dropdown1') || toggleBtn.closest('.dropdown2');
+    
+    // 關閉其他 submenu（可選）
+    document.querySelectorAll('.dropdown1.show, .dropdown2.show').forEach(openDropdown => {
+      if (openDropdown !== parentDropdown) {
+        openDropdown.classList.remove('show');
+      }
+    });
+
+    // 切換目前 submenu
+    parentDropdown.classList.toggle('show');
   });
 });
 
+// 點任何 link 時，收起 menu（手機使用情境）
 document.querySelectorAll('#menu a').forEach(link => {
   link.addEventListener('click', () => {
     menu.classList.remove('show');
+    document.querySelectorAll('.dropdown1.show, .dropdown2.show').forEach(drop => {
+      drop.classList.remove('show');
+    });
   });
 });
 
