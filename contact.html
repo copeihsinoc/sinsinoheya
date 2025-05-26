@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">
+                <img src="images/logo.png" alt="logo" id="logo">
+            </a>
+            <button id="menuToggle">☰</button>
+            <ul id="menu">
+                <li class="dropdown1">
+                    <a href="project.html">Project</a>
+                    <button class="submenuToggle">▼</button>
+                    <ul class="submenu">
+                        <li><a href="#Web">Web Design</a></li>
+                        <li><a href="#Game">Game</a></li>
+                        <li><a href="#Animation">Animation</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown2"> 
+                    <a href="arts.html">Art</a>
+                    <button class="submenuToggle">▼</button>
+                    <ul class="submenu">
+                        <li><a href="Arts-3D.html">3D</a></li>
+                        <li><a href="Arts-concept.html">Concept</a></li>
+                        <li><a href="Arts-illustration.html">illustration</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">About</a></li>
+            </ul> 
+        </nav>
+    </header>
+    <main>
+        <section class="about">
+            <div class="description1">
+                <p>Meet the Dreamer</p><br>
+                <h2>I'm Peihsin, where design flirts with code.</h2>
+            </div>
+            <div class="profile">
+                <img src="images/id.jpeg" alt="id">
+            </div>
+            <div class="description2">
+                <p>
+                    Started in 3D, now I’m coding in Paris. Currently blending pixels with logic at DesCodeuses — crafting digital experiences that are both beautiful and functional.
+                </p>
+                <p>
+                    On the lookout for a creative internship where I can build cool things, learn a ton, and grow along the way.
+                </p>
+                <p>
+                    Let’s make some digital magic together — and bring ideas to life!
+                </p>
+            </div>
+        </section>
+        <section class="contactMe">
+            <h2>Contact Me</h2>
+            <form id="contactForm">
+                <div class="row">
+                    <div class="Grp">
+                        <label for="name">Name:</label>
+                        <input type="text" name="name" id="name">
+                        <span class="error" id="nameError"></span>
+                    </div>
+                    <div class="Grp">
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email">
+                        <span class="error" id="emailError"></span>
+                    </div>  
+                </div>
+                <div class="messageArea">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message"></textarea>
+                    <span class="error" id="messageError"></span>
+                </div><br>
+                <button class="sayHi" type="submit">Send it!</button>
+            </form>
+        </section>
+        <aside>
+            <h1>Sinsinoheya</h1>
+        </aside>
+    </main>
+    <footer>©2025 Sinsinoheya - You & Me</footer>
+    <script src="common.js" ></script>
+    <script src="contact.js" ></script>
+</body>
+</html>

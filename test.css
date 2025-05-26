@@ -1,0 +1,77 @@
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+section {
+  margin-bottom: 50px;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #007acc;
+  padding-bottom: 8px;
+  color: #007acc;
+}
+
+.project-preview {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  align-items: center;
+}
+
+.project-preview iframe {
+  flex: 1 1 300px;
+  min-width: 280px;
+  height: 170px;
+  border-radius: 6px;
+  border: none;
+}
+
+.project-preview h3 {
+  flex: 1 1 300px;
+  margin: 0 0 8px 20px;
+  color: #222;
+}
+
+.project-preview p {
+  flex: 1 1 300px;
+  margin: 0 0 10px 20px;
+  line-height: 1.4;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.project-preview a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #007acc;
+  font-weight: 600;
+  align-self: flex-start;
+  transition: color 0.3s ease;
+}
+
+.project-preview a:hover {
+  color: #004a99;
+}
+
+@media (max-width: 768px) {
+  .project-preview {
+    flex-direction: column;
+  }
+  .project-preview iframe,
+  .project-preview h3,
+  .project-preview p,
+  .project-preview a {
+    margin-left: 0;
+  }
+}
