@@ -525,7 +525,7 @@ figure{
 .separator {
   height: 100%;
   background-image: radial-gradient(#FEB3C1 5px, transparent 5px);
-  background-size: 30px 20px; /* between the dots */
+  background-size: 20px 20px; /* between the dots */
   background-repeat: repeat-y;
   background-position: center;
 }
