@@ -1,47 +1,39 @@
 /*enterSite*/
-function enterSite(){
+function enterSite() {
   let slogan = document.getElementById("slogan");
   slogan.classList.add("fade-out");
-  setTimeout(()=>{
+  setTimeout(() => {
     slogan.style.display = "none";
-    document.getElementById("slide").scrollIntoView({behavior: "smooth"});
+    document.getElementById("slide").scrollIntoView({ behavior: "smooth" });
   }, 800);
 }
 
 /*menu*/
 let menuToggle = document.getElementById("menuToggle");
 let menu = document.getElementById("menu");
+let closeSidebar = document.getElementById("closeSidebar");
 
 menuToggle.addEventListener("click", () => {
   menu.classList.toggle("show");
 });
 
-// control submenu on/off
-document.querySelectorAll('.submenuToggle').forEach(toggleBtn => {
-  toggleBtn.addEventListener('click', (e) => {
-    e.stopPropagation(); // stop others 
-    let parentDropdown = toggleBtn.closest('.dropdown1') || toggleBtn.closest('.dropdown2');
-    
-    document.querySelectorAll('.dropdown1.show, .dropdown2.show').forEach(openDropdown => {
-      if (openDropdown !== parentDropdown) {
-        openDropdown.classList.remove('show');
-      }
-    });
+closeSidebar.addEventListener("click", () => {
+  menu.classList.remove("show");
+})
 
-    parentDropdown.classList.toggle('show');
-  });
+/*header scroll */
+window.addEventListener("scroll", () => {
+  let header = document.querySelector("header");
+  /*if scroll ↓ over 10px add scrolled sinon scroll top remove scrolled */
+  if (window.scrollY > 10) {
+    header.classList.add("scrolled");
+  } else {
+    header.classList.remove("scrolled");
+  }
 });
 
-// 點任何 link 時，收起 menu（手機使用情境）
-document.querySelectorAll('#menu a').forEach(link => {
-  link.addEventListener('click', () => {
-    menu.classList.remove('show');
-    document.querySelectorAll('.dropdown1.show, .dropdown2.show').forEach(drop => {
-      drop.classList.remove('show');
-    });
-  });
-});
 
+/*slide*/
 let slides = document.querySelectorAll('.slideImg');
 let next = document.querySelector('.next');
 let back = document.querySelector('.back');
@@ -72,14 +64,29 @@ back.addEventListener('click', () => {
   updateSlides();
 });
 
-//add a new image
-let newImg = document.createElement('img');
-newImg.src = 'images/fresh_lobster01.jpg';
-newImg.alt = 'slideImg';
-newImg.className = 'slideImg';
+//add images
+let slideImages = [
+  { src: 'images/logo.png', link: 'my-portfolio-website.html' },
+  { src: 'images/on-last-grind01.jpg', link: 'on-last-grind.html' },
+  { src: 'images/invictus01.jpg', link: 'invictus.html' },
+  { src: 'images/fresh_lobster.jpg', link: 'fresh-lobster.html' },
+];
 
-//put into slideContainer
-document.querySelector('.slideContainer').appendChild(newImg);
+for (let item of slideImages) {
+
+  let a = document.createElement('a');
+  a.href = item.link;
+  a.className = 'slideImg';
+  
+  let img = document.createElement('img')
+  img.src = item.src;
+  img.alt = 'slideImg';
+  
+
+  a.appendChild(img);
+  //put into slideContainer
+  document.querySelector('.slideContainer').appendChild(a);
+}
 
 //restart
 slides = document.querySelectorAll('.slideImg')

@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arts</title>
+    <title>project-details</title>
     <link href="style.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
     <header>
         <nav>
@@ -47,11 +48,44 @@
         </nav>
     </header>
     <main>
-        <div id="artsAll"></div>
+        <div class="project-details">
+            <div class="bg"></div>
+
+            <div class="content">
+                <div class="left">
+                    <p id="year"></p>
+                    <h2 id="title"></h2>
+                    <button class="btn-video" id="videoBtn"> ▶ WATCH TRAILER</button>
+                </div>
+                <div class="center">
+                    <img id="image" src="" alt="project image" />
+                </div>
+                <div class="right">
+                    <p><em><strong id="subtitle"></strong></em></p>
+                    <p><strong>Role:</strong><span id="role"></span></p>
+                    <p><strong>Tools:</strong><span id="tools"></span></p><br>
+                    <p id="description"></p>
+                </div>
+                <div class="buttons">
+                    <div class="btn-left">
+                        <button class="btn-slide" onclick="slidePrev()">🠔</button>
+                        <span id="prevTitle" class="btn-label">Prev</span>
+                    </div>
+                    <div class="btn-center">
+                        <a href="project.html" class="return-link" title="Back to Project Page">
+                            🎨
+                        </a>
+                    </div>
+                    <div class="btn-right">
+                        <span id="nextTitle" class="btn-label">Next</span>
+                        <button class="btn-slide" onclick="slideNext()">🠖</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
-    <footer>©2025 Sinsinoheya - You & Me</footer>
     <script src="common.js"></script>
-    <script src="artworks.js"></script>
-    <script src="arts.js"></script>
+    <script src="project-details.js"></script>
 </body>
+
 </html>

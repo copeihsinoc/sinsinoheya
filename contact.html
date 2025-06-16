@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>contact</title>
     <link href="style.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <header>
@@ -12,28 +13,37 @@
             <a href="index.html">
                 <img src="images/logo.png" alt="logo" id="logo">
             </a>
+            <!--☰-->
             <button id="menuToggle">☰</button>
-            <ul id="menu">
-                <li class="dropdown1">
-                    <a href="project.html">Project</a>
-                    <span class="submenuToggle">▼</span>
+            <!--Sidebar(mobile)-->
+            <ul id="menu" class="sidebar">
+                <!--X-->
+                <li><button id="closeSidebar">✕</button></li>
+
+                <li><a href="project.html">Project</a></li>
+
+                <li class="dropdown">
+                    <a href="arts.html">Art▼</a>
                     <ul class="submenu">
-                        <li><a href="project.html#Web">Web Design</a></li>
-                        <li><a href="project.html#Game">Game</a></li>
-                        <li><a href="project.html#Animation">Animation</a></li>
+                        <li><a href="arts.html?category=3d">3D</a></li>
+                        <li><a href="arts.html?category=concept">Concept</a></li>
+                        <li><a href="arts.html?category=illustration">illustration</a></li>
                     </ul>
                 </li>
-                <li class="dropdown2"> 
-                    <a href="arts.html">Art</a>
-                    <span class="submenuToggle">▼</span>
-                    <ul class="submenu">
-                        <li><a href="Arts-3D.html">3D</a></li>
-                        <li><a href="Arts-concept.html">Concept</a></li>
-                        <li><a href="Arts-illustration.html">illustration</a></li>
-                    </ul>
-                </li>
+
                 <li><a href="contact.html">About</a></li>
-            </ul> 
+                <li class="social-links">
+                    <a href="https://www.linkedin.com/in/peihsin-chang/" target="_blank" title="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/copeihsinoc" target="_blank" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://sites.google.com/view/sinsinoheya" target="_blank" title="Website">
+                        <i class="fas fa-home"></i>
+                    </a>
+                </li>
+            </ul>
         </nav>
     </header>
     <main>

@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arts</title>
-    <link href="style.css" rel="stylesheet" />
+    <title>Diorama-bread truck</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/css/lightbox.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
     <header>
         <nav>
@@ -46,12 +49,33 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <div id="artsAll"></div>
+    <main id="artwork">
+        <div class="artworkContainer">
+
+        </div>
+            
+        <div class="arts-buttons-container">
+            <div class="btnPrev">
+                <button class="arts-btn-slide">🠔</button>
+                <span id="prevTitle" class="btn-label">prev</span>
+            </div>
+            <div class="arts-btn-center">
+                <a href="arts.html" class="return-link" title="Back to Arts Page">
+                    🎨
+                </a>
+            </div>
+            <div class="btnNext">
+                <span id="nextTitle" class="btn-label">next</span>
+                <button class="arts-btn-slide">🠖</button>
+            </div>
+        </div>
     </main>
-    <footer>©2025 Sinsinoheya - You & Me</footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/js/lightbox.min.js"></script>
     <script src="common.js"></script>
     <script src="artworks.js"></script>
-    <script src="arts.js"></script>
+    <script src="artwork.js"></script>
+    
 </body>
+
 </html>

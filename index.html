@@ -1,66 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sinsinoheya</title>
-    <link href="style.css" rel="stylesheet"/>
+    <link href="style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
     <header>
         <nav>
             <a href="index.html">
                 <img src="images/logo.png" alt="logo" id="logo">
             </a>
+            <!--☰-->
             <button id="menuToggle">☰</button>
-            <ul id="menu">
-                <li class="dropdown1">
-                    <a href="project.html">Project</a>
-                    <span class="submenuToggle">▼</span>
+            <!--Sidebar(mobile)-->
+            <ul id="menu" class="sidebar">
+                <!--X-->
+                <li><button id="closeSidebar">✕</button></li>
+
+                <li><a href="project.html">Project</a></li>
+
+                <li class="dropdown">
+                    <a href="arts.html">Art▼</a>
                     <ul class="submenu">
-                        <li><a href="project.html#Web">Web Design</a></li>
-                        <li><a href="project.html#Game">Game</a></li>
-                        <li><a href="project.html#Animation">Animation</a></li>
+                        <li><a href="arts.html?category=3d">3D</a></li>
+                        <li><a href="arts.html?category=concept">Concept</a></li>
+                        <li><a href="arts.html?category=illustration">illustration</a></li>
                     </ul>
                 </li>
-                <li class="dropdown2"> 
-                    <a href="arts.html">Art</a>
-                    <span class="submenuToggle">▼</span>
-                    <ul class="submenu">
-                        <li><a href="Arts-3D.html">3D</a></li>
-                        <li><a href="Arts-concept.html">Concept</a></li>
-                        <li><a href="Arts-illustration.html">illustration</a></li>
-                    </ul>
-                </li>
+
                 <li><a href="contact.html">About</a></li>
-            </ul> 
+                <li class="social-links">
+                    <a href="https://www.linkedin.com/in/peihsin-chang/" target="_blank" title="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/copeihsinoc" target="_blank" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://sites.google.com/view/sinsinoheya" target="_blank" title="Website">
+                        <i class="fas fa-home"></i>
+                    </a>
+                </li>
+            </ul>
         </nav>
     </header>
     <main>
         <section id="slogan">
             <img src="images/logo.png" alt="logo" onclick="enterSite()">
             <div class="art">
-                <div class="letter" id="A1">A</div>
-                <div class="letter" id="R1">R</div>
-                <div class="letter" id="T1">T</div>
-                <div class="space"></div>
-                <div class="letter" id="I1">I</div>
-                <div class="letter" id="N1">N</div>
-                <div class="space"></div>
-                <div class="letter" id="M1">M</div>
-                <div class="letter" id="O1">O</div>
-                <div class="letter" id="T2">T</div>
-                <div class="letter" id="I2">I</div>
-                <div class="letter" id="O2">O</div>
-                <div class="letter" id="N2">N</div>
+                <div>ART<br>IN<br>MOTION</div>
             </div>
         </section>
         <section id="slide">
             <h2>SPOTLIGHT</h2>
             <div class="slideContainer">
-                <img class="slideImg" src="images/logo.png" alt="slideImg">
-                <img class="slideImg" src="images/img (13).jpg" alt="slideImg">
-                <img class="slideImg" src="images/invictus01.jpg" alt="slideImg">
+                
             </div>
             <button class="back">⬅</button>
             <button class="next">⮕</button>
@@ -72,18 +70,18 @@
         </section>
         <section class="artCollection">
             <div class="artImgContainer">
-                <img class="artImg" src="images/img (4).jpg" alt="artImg">
-                <img class="artImg" src="images/img (1).jpg" alt="artImg">
-                <img class="artImg" src="images/img (2).jpg" alt="artImg">
-                <img class="artImg" src="images/img (16).jpg" alt="artImg">
+                <img class="artImg" src="images/kikis-bakery02.jpg" alt="artImg">
+                <img class="artImg" src="images/camping-sunset.jpg" alt="artImg">
+                <img class="artImg" src="images/diorama-bread-truck.jpg" alt="artImg">
+                <img class="artImg" src="images/oliver-twist.jpg" alt="artImg">
             </div>
             <div class="toArtContainer">
                 <div class="headline">
-                <h2>COLLECTION</h2>
-                <p>ARTS</p>
+                    <h2>COLLECTION</h2>
+                    <p>ARTS</p>
                 </div>
                 <div class="toArt">
-                <a href="arts.html">Reach out → </a>
+                    <a href="arts.html">Reach out → </a>
                 </div>
             </div>
         </section>
@@ -97,7 +95,7 @@
                 <p>I’m a creative developer passionate about design and 3D.<br>
                     Currently training in Full-Stack Web Development at DesCodeuses in Paris,<br>
                     after graduating from Gamagora in 3D for games and interactive media.<br>
-                    I’m eager to find a creative internship where I can grow, contribute, 
+                    I’m eager to find a creative internship where I can grow, contribute,
                     and bring ideas to life through code and visuals.<br>
                     Got a cool idea?<br>
                     Let’s connect — I’m open to collabs!
@@ -112,15 +110,15 @@
             <h2>Let’s connect </h2>
             <p>Catch me online anytime!</p>
             <div class="icon">
-            <a href="https://www.linkedin.com/in/peihsin-chang/">
-                <img src="images/linkedin.png" alt="linkedin">
-            </a>
-            <a href="#">
-                <img src="images/art station.png" alt="art station">
-            </a>
-            <a href="https://github.com/copeihsinoc">
-                <img src="images/github.png" alt="github">
-            </a>
+                <a href="https://www.linkedin.com/in/peihsin-chang/">
+                    <img src="images/linkedin.png" alt="linkedin">
+                </a>
+                <a href="https://sites.google.com/view/sinsinoheya">
+                    <img src="images/family_home.png" alt="home">
+                </a>
+                <a href="https://github.com/copeihsinoc">
+                    <img src="images/github.png" alt="github">
+                </a>
             </div>
         </section>
         <aside class="logoDetail">
@@ -132,4 +130,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>
