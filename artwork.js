@@ -17,14 +17,28 @@ function showArtwork(artwork) {
     }
     //boucle for + une img
     let galleryHTML = "";
-    if (artwork.gallery && artwork.gallery.length > 0) {
-        for (let i = 0; i < artwork.gallery.length; i++) {
+    if(artwork.gallery && artwork.gallery.length > 0){
+        for (let i = 0; i < artwork.gallery.length; i++){
             galleryHTML += `
                 <a href="${artwork.gallery[i]}" data-lightbox="gallery">
                     <img src="${artwork.gallery[i]}" alt="Gallery image">
                 </a>
             `;
         }
+    }
+
+    let detailsHTML = "";
+    if(artwork.details && artwork.details.length > 0){
+        detailsHTML += `<table class="details-table"><tbody>`;
+        for(let i=0; i < artwork.details.length; i++){
+            detailsHTML +=`
+                <tr>
+                    <td>${artwork.details[i].label}</td>
+                    <td>${artwork.details[i].tool}</td>
+                </tr>
+            `;
+        }
+        detailsHTML += `</tbody></table>`;
     }
 
     container.innerHTML = `
@@ -39,7 +53,7 @@ function showArtwork(artwork) {
             <div class="right-column">
                 <h2>${artwork.title}</h2>
                 <p>${artwork.description}</p>
-                <div class="details">${artwork.details}</div>
+                <div class="details">${detailsHTML}</div>
             </div>
         </div>
     `;

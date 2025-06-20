@@ -286,7 +286,7 @@ button.next {
 /*section-art*/
 .artCollection{
     display: grid;
-    grid-template-rows: 1fr 1fr 50px;
+    grid-template-rows: 1fr 1fr 50px  ;
 }
 
 .artImgContainer{
@@ -863,30 +863,32 @@ iframe {
     background-color:#ffffff80;
     border-radius: 5px;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
-    margin: 120px 0;
+    margin: 20px 0;
     align-items: center;
 }
 
 .left {
-  flex: 1;
-  max-width: 30%;
-  position: relative;
-  z-index: 1;
+    flex: 1;
+    max-width: 30%;
+    position: relative;
+    z-index: 1;
 }
 
 .center {
-  flex: 1;
-  max-width: 35%;
-  display: flex;
-  justify-content: center;
-  position: relative;
-  overflow: visible;
+    flex: 1;
+    max-width: 35%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    overflow: visible;
+    min-height: 300px;
 }
 
 .right {
   flex: 1;
   max-width: 30%;
   z-index: 1;
+  margin-left: 50px;
 }
 
 .btn-video{
@@ -924,6 +926,8 @@ iframe {
 
 .content p{
     margin-bottom: 0;
+    color:#292929;
+    font-size: 20px;
 }
 
 

@@ -66,10 +66,10 @@ back.addEventListener('click', () => {
 
 //add images
 let slideImages = [
-  { src: 'images/logo.png', link: 'my-portfolio-website.html' },
-  { src: 'images/on-last-grind01.jpg', link: 'on-last-grind.html' },
-  { src: 'images/invictus01.jpg', link: 'invictus.html' },
-  { src: 'images/fresh_lobster.jpg', link: 'fresh-lobster.html' },
+  { src: 'images/logo.png', link: 'project-details.html?id=1' },
+  { src: 'images/on-last-grind01.jpg', link: 'project-details.html?id=2' },
+  { src: 'images/invictus01.jpg', link: 'project-details.html?id=3' },
+  { src: 'images/fresh_lobster.jpg', link: 'project-details.html?id=4' },
 ];
 
 for (let item of slideImages) {
