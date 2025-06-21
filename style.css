@@ -501,6 +501,7 @@ figure{
     width: 100%;
     max-width: 1200px;
     box-sizing: border-box;
+    gap: 10px
 }
 
 .separator {
@@ -598,7 +599,6 @@ figure{
 .contactMe h2{
     text-align: center;
     font-size: 64px;
-    margin-bottom: -25px;
 }
 #contactForm{
     position: relative;
@@ -660,6 +660,7 @@ figure{
     font-size: 30px;
     padding: 0 20px;
     height: 45px;
+    margin-bottom: -20px;
     transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
 }
 
@@ -835,19 +836,17 @@ iframe {
 
 /*project_pages*/
 .project-details{
-    position: relative;
     height: 100vh;
-    overflow:hidden;
     display: flex;
     justify-content: center;
 }
 
 .project-details .bg{
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     background-size: cover;
     background-position: center;
     filter: blur(3px);
