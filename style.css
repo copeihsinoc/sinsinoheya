@@ -930,7 +930,7 @@ figure {
 @media (max-width: 768px) {
 
     #slogan img {
-        width: 60%;
+        width: 100%;
     }
 
     .art h2 {
