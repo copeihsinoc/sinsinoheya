@@ -1047,6 +1047,7 @@ figure {
 
     .block1 {
         grid-template-columns: 1fr;
+        gap: 0;
     }
 
     .column img {
