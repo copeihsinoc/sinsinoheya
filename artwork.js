@@ -33,8 +33,9 @@ function showArtwork(artwork) {
         for(let i=0; i < artwork.details.length; i++){
             detailsHTML +=`
                 <tr>
-                    <td>${artwork.details[i].label}</td>
-                    <td>${artwork.details[i].tool}</td>
+                    <td><strong>${artwork.details[i].label}<strong>:
+                    <span class="tool">${artwork.details[i].tool}</span>
+                    </td>
                 </tr>
             `;
         }

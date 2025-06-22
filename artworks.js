@@ -7,7 +7,7 @@ let artworks = [
         description: `Designed and textured 3D models with precise UV mapping, 
         then imported and rendered them in Unity to achieve stunning visuals.`,
         details: [
-            {label: "3D & UV Mapping & Textures",tool: "Maya & Substance"},
+            {label: "3D & UV Mapping & Textures",tool: "Maya & Substance Painter"},
             {label: "Rendered", tool: "Unity"}
         ],
     },
