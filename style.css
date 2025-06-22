@@ -178,7 +178,6 @@ header.scrolled #menu li a {
 #slogan img {
     width: 50%;
     display: block;
-    margin: 0 auto;
     transition: transform 3s ease;
     filter: drop-shadow(0 0 10px hotpink);
 }
@@ -188,13 +187,11 @@ header.scrolled #menu li a {
     filter: drop-shadow(0 0 20px hotpink);
 }
 
-.art {
-    display: flex;
-    justify-content: center;
+.art h2{
     color: #ff158a;
     font-size: 45px;
-    gap: 20px;
     font-weight: bold;
+    margin-top: 0;
 }
 
 /*section-slide*/
@@ -931,6 +928,8 @@ figure {
 
 /* version mobile */
 @media (max-width: 768px) {
+
+
 
     #menuToggle,
     #closeSidebar {
