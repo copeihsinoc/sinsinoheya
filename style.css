@@ -57,10 +57,10 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
     /*make sure nav higher than ::before*/
     position: relative;
     z-index: 1;
+    margin: 0 10px;
 }
 
 #menu,
@@ -615,7 +615,7 @@ figure {
 
 .details-table .tool {
     font-weight: normal;
-    font-style: italic;
+    font-family: "Open Sans", sans-serif;
     color: #777;
 }
 
@@ -741,23 +741,17 @@ figure {
 /*Project*/
 #project-header {
     width: 100%;
-    height: 30vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-
     position: relative;
     transition: transform 1.5s ease, opacity 1.5s ease;
-}
-
-/*first-hide*/
-.slide-down {
     transform: translateY(300px);
     opacity: 0;
 }
 
 /*active */
-.slide-down.active {
+#project-header.active {
     transform: translateY(0);
     opacity: 1;
 }
@@ -825,7 +819,6 @@ figure {
 
 #Animation {
     scroll-margin-top: 200px;
-    /* 視你的 header 高度調整 */
 }
 
 /* mixed position */
@@ -839,7 +832,7 @@ figure {
     font-size: 30px;
 }
 
-/*project_pages*/
+/*project details*/
 .project-details {
     height: 100vh;
     display: flex;
@@ -932,7 +925,7 @@ figure {
 .content p {
     margin-bottom: 0;
     color: #292929;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 
@@ -1031,12 +1024,25 @@ figure {
     .about {
         grid-template-columns: 1fr;
         grid-template-rows: auto;
+        padding: 10px;
     }
 
     #contactForm {
         padding: 30px;
         margin: 20px auto;
         width: 95%;
+    }
+
+    .contactMe h2 {
+        font-size: 45px;
+    }
+
+    .description1 h2 {
+        font-size: 30px;
+    }
+
+    .description2 p {
+        font-size: 14px;
     }
 
     /*arts page*/
@@ -1085,4 +1091,121 @@ figure {
     #nextTitle {
         display: none;
     }
+
+    /*project*/
+    #project-header {
+        transform: none;
+        opacity: 1;
+        transition: none;
+        margin-top: 50px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .preview {
+        opacity: 1;
+        transform: none;
+        transition: none;
+        pointer-events: auto;
+    }
+
+    /* mixed position */
+    .preview-link:nth-child(even) .preview {
+        margin-top: 0;
+    }
+
+    #project-header h2,
+    #moreComing h2 {
+        font-size: 45px;
+    }
+
+    #project-header p {
+        font-size: 14px;
+    }
+
+    .preview img {
+        height: 300px;
+    }
+
+    .grid h2 {
+        font-size: 30px;
+    }
+
+    #moreComing {
+        margin: 30px 0;
+    }
+
+    /*project details*/
+
+    .project-details {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content {
+        flex-direction: column;
+        width: 90%;
+        padding: 20px;
+        margin: 20px auto;
+        background-color: #ffffffcc;
+        border-radius: 5px;
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+        position: relative;
+    }
+
+    .center img {
+        max-height: 500px;
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .left,
+    .center,
+    .right {
+        max-width: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 10px 0;
+    }
+
+    .center {
+        order: 1;
+    }
+
+    .left {
+        order: 2;
+    }
+
+    .right {
+        order: 3;
+    }
+
+    .buttons {
+        position: static;
+        margin-top: 20px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .btn-left,
+    .btn-right {
+        margin: 0;
+    }
+
+    .content h2 {
+        font-size: 45px;
+    }
+
+    .content p {
+        font-size: 14px;
+    }
+
 }

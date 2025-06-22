@@ -6,16 +6,12 @@ let projects = [
         subtitle: "Web Portfolio – Front-End Development",
         role: "Front-End Developer / UI Designer",
         tools: "HTML, CSS, JavaScript, Figma, Git",
-        description:
-            `Designed and developed a personal portfolio website<br>
-        to showcase my projects and skills.<br><br>
-        Created layouts in Figma<br>
-        with focus on user experience and clean design.<br><br>
-        Used HTML, CSS, and JavaScript<br> 
-        to build a responsive, interactive site<br>
-        that works across browsers.<br><br>
-        Wrote clean, accessible code<br>
-        for easy updates and maintenance.`,
+        description: `
+            <p>Designed and developed a personal portfolio website to showcase my projects and skills.</p>
+            <p>Created layouts in Figma with focus on user experience and clean design.</p>
+            <p>Used HTML, CSS, and JavaScript to build a responsive, interactive site that works across browsers.</p>
+            <p>Wrote clean, accessible code for easy updates and maintenance.</p>
+            `,
         image: "images/logo01.png",
         video: "https://copeihsinoc.github.io/TP/",
         bgImage: "images/MyPortfolioWeb-bg.png"
@@ -27,13 +23,16 @@ let projects = [
         subtitle: "Skateboarding Game – Character & Animation",
         role: "Character & Skateboarding Animator",
         tools: "Maya (Animation), Unreal Engine (In-Game Rendering)",
-        description:
-            `Created responsive skateboard animations for the main character, including:
-            ．Ollies
-            ．Flips
-            ．Grinds
-            ．Transitions
-        Blended animations for smooth transitions and implemented them in Unreal Engine for real-time interaction.`,
+        description:`
+            <p>Created responsive skateboard animations for the main character, including:</p>
+                <ul>
+                    <li>Ollies</li>
+                    <li>Flips</li>
+                    <li>Grinds</li>
+                    <li>Transitions</li>
+                </ul>
+            <p>Blended animations for smooth transitions and implemented them in Unreal Engine for real-time interaction.</p>
+            `,
         image: "images/on-last-grind02.png",
         video: "https://www.youtube.com/embed/INAOgAJLBmg",
         bgImage: "images/on-last-grind01.jpg"
@@ -45,11 +44,18 @@ let projects = [
         subtitle: "Character Creation Project – Full 3D Pipeline",
         role: "3D Character Artist & Animator",
         tools: "Blender (Sculpting), Maya (Modeling, Rigging, Animation), Unreal Engine (In-Game Rendering)",
-        description:
-            `Created a fully animated 3D character using a complete production pipeline:<br>
-        sculpting, retopology, UV mapping, texturing, rigging, and animation.<br><br>
-        Collaborated with the team to integrate the character into Unreal Engine,<br>
-        ensuring visual consistency and real-time performance.`,
+        description:`
+            <p>Created a fully animated 3D character using a complete production pipeline:</p>
+                <ul>
+                    <li>Sculpting</li>
+                    <li>Retopology</li>
+                    <li>UV Mapping</li>
+                    <li>Texturing</li>
+                    <li>Rigging</li>
+                    <li>Animation</li>
+                </ul>
+            <p>Collaborated with the team to integrate the character into Unreal Engine, ensuring visual consistency and real-time performance.</p>
+            `,
         image: "images/invictus02.png",
         video: "https://sketchfab.com/models/680d19e4f89b41dcbe6ecbeff4ffbf0e/embed",
         bgImage: "images/invictus03.png"
@@ -61,11 +67,17 @@ let projects = [
         subtitle: "3D Animated Short Film – Character Animation",
         role: "Character Animator",
         tools: "Maya (Animation, Rendering)",
-        description:
-            `Brought multiple characters to life—including the chef, lobsters,
-        and passengers—through expressive animation for a short film produced at Bellecour École (2020).<br><br>
-        Supported the production pipeline by contributing to layout and storyboarding, 
-        focusing on performance clarity and visual storytelling.`,
+        description:`
+            <p>Animated multiple characters—including the chef, lobsters, and passengers—for a short film produced at Bellecour École (2020).</p>
+            <p>Focused on expressive motion and character performance to enhance storytelling.</p>
+            <p>Also contributed to:</p>
+                <ul>
+                    <li>Layout planning</li>
+                    <li>Storyboarding</li>
+                    <li>Performance clarity</li>
+                    <li>Visual storytelling</li>
+                </ul>
+            `,
         image: "images/fresh-lobster-05.png",
         video: "https://drive.google.com/file/d/1XfmKpJQGHOB6yRXPJ-EcqsOW9IuWQgTm/view?usp=drive_link",
         bgImage: "images/fresh-lobster02.jpg"
