@@ -176,7 +176,7 @@ header.scrolled #menu li a {
 }
 
 #slogan img {
-    width: 50%;
+    width: 60%;
     display: block;
     transition: transform 3s ease;
     filter: drop-shadow(0 0 10px hotpink);
@@ -928,20 +928,31 @@ figure {
 
 /* version mobile */
 @media (max-width: 768px) {
-
-    #slogan img {
-        width: 100%;
-    }
-
     .art h2 {
         font-size: 30px;
     }
 
+    #menuToggle {
+        display: block;
+        /* show ☰ */
+        background-color: transparent;
+        border: none;
+        color: #ff158a;
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
 
-    #menuToggle,
     #closeSidebar {
         display: block;
         /* show ☰ */
+        background: transparent;
+        border: none;
+        color: hotpink;
+        font-size: 24px;
+        font-weight: bold;
+        cursor: pointer;
+        margin-left: auto;
+        margin-right: 10px;
     }
 
     #menu {
@@ -959,6 +970,7 @@ figure {
         right: 0;
     }
 
+    /*hide submenu*/
     .submenu {
         display: none;
     }
@@ -984,6 +996,13 @@ figure {
 
     .artImgContainer {
         grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .artImgContainer img {
+        width: 100%;
+        aspect-ratio: 4 / 3;
+        object-fit: cover;
     }
 
     #about {
