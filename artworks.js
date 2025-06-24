@@ -51,7 +51,7 @@ let artworks = [
         category: "3d",
         id: "a-quirky-old-elf",
         title: "A quirky old elf",
-        mainImage: "images/elf.png",
+        mainImage: "images/elf04.png",
         gallery: [
             "images/elf01.png",
             "images/elf02.png",
