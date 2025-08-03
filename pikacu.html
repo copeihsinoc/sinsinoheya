@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diorama-bread truck</title>
+    <title>pokemon</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/css/lightbox.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
@@ -29,9 +29,9 @@
                 <li class="dropdown">
                     <a href="arts.html">Art▼</a>
                     <ul class="submenu">
-                        <li><a href="#" data-category="3d" class="filter-link">3D</a></li>
-                        <li><a href="#" data-category="concept" class="filter-link">Concept</a></li>
-                        <li><a href="#" data-category="illustration" class="filter-link">illustration</a></li>
+                        <li><a href="arts.html?category=3d">3D</a></li>
+                        <li><a href="arts.html?category=concept">Concept</a></li>
+                        <li><a href="arts.html?category=illustration">illustration</a></li>
                     </ul>
                 </li>
 
@@ -50,30 +50,36 @@
             </ul>
         </nav>
     </header>
-    <main id="artworks">
-        <div class="artworkContainer" id="artworkContent">
-
-        </div>
-            
-        <div class="arts-buttons-container">
-            <div class="arts-btn-left">
-                <button class="arts-btn-slide" onclick="slidePrev()">🠔</button>
-                <span id="prevTitle" class="btn-label">prev</span>
+    <main>
+        <div class="pokemon-container">
+            <div class="pokeDescription">
+                <h2>Pokemon Explorer</h2>
+                <p>A simple Pokédex web app using HTML, CSS, and JavaScript.
+                    Users can search for a Pokémon by name and view basic details using data from PokeAPI.</p>
+                <h3>Features:</h3>
+                <ul>
+                    <li>Search Pokémon by name</li>
+                    <li>Show name, weight, and image</li>
+                    <li>Displays error for invalid names</li>
+                    <li>Console log shows full data</li>
+                </ul>
+                <h3>Tech Stack:</h3>
+                <ul>
+                    <li>HTML – Page structure</li>
+                    <li>CSS – Basic styling (optional)</li>
+                    <li>JavaScript – fetch(), async/await, and DOM manipulation</li>
+                </ul>
             </div>
-            <div class="arts-btn-center">
-                <a href="arts.html" class="return-link" title="Back to Arts Page">
-                    🎨
-                </a>
-            </div>
-            <div class="arts-btn-right">
-                <span id="nextTitle" class="btn-label">next</span>
-                <button class="arts-btn-slide" onclick="slideNext()">🠖</button>
+            <div class="pokeResult">
+                <h2>Who's That Pokémon?</h2>
+                <input type="text" id="pokemonName" placeholder="Search Pokémon">
+                <button onclick="getPokemonInfo()">check it out</button>
+                <div id="pokemonInfo"></div>
             </div>
         </div>
     </main>
     <script src="common.js"></script>
-    <script src="artworks.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/js/lightbox.min.js"></script>
+    <script src="pikachu.js"></script>
 </body>
 
 </html>
